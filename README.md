@@ -40,6 +40,13 @@ git --version
 That's it!
 
 ## Intall Python
+### First install potentially missing dependencies
+#### SSL for PIP
+```
+
+```
+
+### Install Python
 To setup python, my prefered way is the following [script (local to this repo)](scripts/install_python.sh).
 
 

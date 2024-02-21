@@ -1,8 +1,14 @@
 # A script for doanloading and installing python from source
-export PYTHON_VERSION=3.10.10
-export PYTHON_MAJOR=3.10
+export PYTHON_VERSION=3.12.2
+export PYTHON_MAJOR=3.12
+
+
+# Install potentially missing libraries
+# Ubuntu only
+sudo apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev
 
 # Download python
+mkdir -p pythons
 cd pythons
 wget https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz
 tar -xvf Python-$PYTHON_VERSION.tgz
